@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import LogoMark from './logomark'
 
 const Nav = () => {
   const [scrolled, setScrolled] = React.useState(false)
@@ -14,8 +15,7 @@ const Nav = () => {
     <header className={"nav" + (scrolled ? " scrolled" : "")}>
       <div className="container nav-inner">
         <Link className="brand" to="/">
-          <span className="brand-mark">N</span>
-          <span>Nivasa</span>
+          <LogoMark size={36} color="var(--teak)" />
         </Link>
         <nav className="nav-links">
           <Link to="/stays" className={pathname.startsWith('/stays') ? 'active' : ''}>Stays</Link>

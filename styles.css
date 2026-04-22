@@ -59,7 +59,7 @@ body::before{
   padding:14px 22px;
   background:var(--terra);
   color:var(--linen);
-  border:none;border-radius:999px;
+  border:none;border-radius:4px;
   font-family:var(--sans);font-weight:500;font-size:15px;
   letter-spacing:.01em;
   cursor:pointer;
@@ -74,7 +74,7 @@ body::before{
   padding:14px 22px;
   background:transparent;
   color:var(--teak);
-  border:1px solid var(--hairline-strong);border-radius:999px;
+  border:1px solid var(--hairline-strong);border-radius:4px;
   font-family:var(--sans);font-weight:500;font-size:15px;
   cursor:pointer;
   transition:all .2s ease;
@@ -433,8 +433,8 @@ p{margin:0}
 .hero-bg-overlay{
   position:absolute;inset:0;
   background:
-    linear-gradient(180deg, rgba(38,22,9,.45) 0%, rgba(38,22,9,.15) 35%, rgba(38,22,9,.75) 100%),
-    linear-gradient(90deg, rgba(38,22,9,.55) 0%, rgba(38,22,9,.05) 60%);
+    linear-gradient(180deg, rgba(38,22,9,.55) 0%, rgba(38,22,9,.25) 35%, rgba(38,22,9,.88) 100%),
+    linear-gradient(90deg, rgba(38,22,9,.65) 0%, rgba(38,22,9,.05) 60%);
 }
 .hero-v2-inner{
   position:relative;z-index:2;
@@ -822,7 +822,7 @@ p{margin:0}
 .contact-field{display:flex;flex-direction:column;gap:7px;margin-bottom:20px}
 .contact-field:last-child{margin-bottom:0}
 .contact-field label{
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  font-family:var(--sans);font-size:12px;letter-spacing:.04em;font-weight:500;
   color:var(--cinnamon);
 }
 .contact-input{

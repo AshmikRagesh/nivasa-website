@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LogoMark from './logomark'
 
 const Footer = () => (
   <footer className="footer" id="contact">
@@ -19,8 +20,7 @@ const Footer = () => (
       <div className="footer-grid">
         <div>
           <div className="footer-brand">
-            <span className="brand-mark">N</span>
-            <span>Nivasa</span>
+            <LogoMark size={48} color="var(--linen)" />
           </div>
           <p className="footer-about">
             Short stays in Bangalore — homes we lease, furnish, and host ourselves.
